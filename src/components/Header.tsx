@@ -125,6 +125,7 @@ export default function Header() {
             </div>
           </div>
           <MagnifyingGlassIcon className="h-6 w-6 text-salesforce-950" />
+          <GlobeAltIcon className="h-6 w-6 text-salesforce-950" />
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               <div className="flex gap-2 text-salesforce-950 items-center">
@@ -149,7 +150,6 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <GlobeAltIcon className="h-6 w-6 text-salesforce-950" />
 
           <Button variant="green">Try for free</Button>
         </div>
