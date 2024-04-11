@@ -13,12 +13,8 @@ import {
   UserIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
-import clsx from "clsx";
+import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
+
 import Logo from "/public/images/logo/salesforce-logo.svg";
 import Image from "next/image";
 import Link from "next/link";

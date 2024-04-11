@@ -14,11 +14,10 @@ type CardProps = {
 
 const Card = (props: CardProps) => {
   const cardClasses = clsx(
-    "rounded-xl",
-    "max-w-96",
-    "shadow-xl",
-    "h-96",
-    "w-full",
+    {
+      "rounded-xl max-w-96 shadow-xl h-96 w-full": props.variant === "primary",
+    },
+
     {
       "shadow-none rounded-none": props.variant === "secondary",
     }
@@ -36,7 +35,7 @@ const Card = (props: CardProps) => {
       <Image
         alt="image"
         src={props.image}
-        width={100}
+        width={300}
         height={200}
         className="w-full h-40 rounded-t-xl"
       />
