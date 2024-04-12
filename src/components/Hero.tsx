@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Button";
+import { Button } from "./Button";
 
 type HeroProps = {
   title: string;
@@ -19,9 +19,11 @@ const Hero = (props: HeroProps) => {
         </h1>
         <p className=" font-light text-xl ">{props.description}</p>
         <div className="grid grid-cols-1  md:grid-cols-2 gap-3 md:w-3/5">
-          {props.children}
+          <Button> Start free triel</Button>
+          <Button variant="secondary"> Wetch demos</Button>
         </div>
       </div>
+      <div className=""> </div>
     </div>
   );
 };

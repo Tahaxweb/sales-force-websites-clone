@@ -3,11 +3,11 @@ import { Button } from "../Button";
 import { Features } from "../Features";
 import { LogoCloudBox } from "../LogoCloudBox";
 const LogoCloudData = [
-  { image: "/public/images/logo/turtlebay-logo.webp", alt: "LogoCloud" },
-  { image: "/public/images/logo/gucci-logo.webp", alt: "LogoCloud" },
-  { image: "/public/images/logo/wonolo-logo.webp", alt: "LogoCloud" },
-  { image: "/public/images/logo/crexı-logo.webp", alt: "LogoCloud" },
-  { image: "/public/images/logo/baca-logo.webp", alt: "LogoCloud" },
+  { image: "/public/images/logo/turtlebay_logo.webp", alt: "LogoCloud1" },
+  { image: "/public/images/logo/gucci_logo.webp", alt: "LogoCloud2" },
+  { image: "/public/images/logo/wonolo_logo.webp", alt: "LogoCloud3" },
+  { image: "/public/images/logo/crexı_logo.webp", alt: "LogoCloud4" },
+  { image: "/public/images/logo/baca_logo.webp", alt: "LogoCloud5" },
 ];
 function LogoCloud() {
   return (

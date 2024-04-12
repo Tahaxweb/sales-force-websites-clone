@@ -3,7 +3,7 @@ import { Button } from "@/components/Button";
 import Card from "@/components/Card";
 import { Features } from "@/components/Features";
 import Header from "@/components/Header";
-import { Hero } from "@/components/sectionComponents.tsx/Hero";
+import { Hero } from "@/components/Hero";
 import Image from "next/image";
 import IndustryImage from "/public/images/industries-break.webp";
 import { LogoCloudBox } from "@/components/LogoCloudBox";

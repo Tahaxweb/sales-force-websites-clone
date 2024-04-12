@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 
-import Logo from "/public/images/logo/salesforce-logo.svg";
+import Logo from "/public/images/logo/salesforce_logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./Button";
