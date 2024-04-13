@@ -15,11 +15,12 @@ type CardProps = {
 const Card = (props: CardProps) => {
   const cardClasses = clsx(
     {
-      "rounded-xl max-w-96 shadow-xl h-96 w-full": props.variant === "primary",
+      "rounded-xl max-w-96 shadow-xl h-96 w-full  bg-white":
+        props.variant === "primary",
     },
 
     {
-      "shadow-none rounded-none": props.variant === "secondary",
+      "shadow-none rounded-none  bg-white": props.variant === "secondary",
     }
   );
 
@@ -39,7 +40,7 @@ const Card = (props: CardProps) => {
         height={200}
         className="w-full h-40 rounded-t-xl"
       />
-      <div className="p-4">
+      <div className="p-4 b">
         <h1 className="text-xl font-semibold text-salesforce-950">
           {props.title}
         </h1>
