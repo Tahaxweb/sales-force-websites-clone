@@ -10,12 +10,14 @@ type CardProps = {
   link: string;
   linkText: string;
   variant: "primary" | "secondary";
+  badge: boolean;
+  badgeText: string;
 };
 
 const Card = (props: CardProps) => {
   const cardClasses = clsx(
     {
-      "rounded-xl max-w-96 shadow-xl h-96 w-full  bg-white":
+      "rounded-xl max-w-96 shadow-xl     h-auto w-full  bg-white":
         props.variant === "primary",
     },
 
@@ -40,8 +42,15 @@ const Card = (props: CardProps) => {
         height={200}
         className="w-full h-40 rounded-t-xl"
       />
-      <div className="p-4 b">
-        <h1 className="text-xl font-semibold text-salesforce-950">
+      <div className="p-4 ">
+        {props.badge === true || props.badge == null ? (
+          props.badgeText ? (
+            <div className=" w-auto   inline rounded-full h-auto px-3  py-1 bg-salesforce-300 bg-opacity-40 text-salesforce-950">
+              {props.badgeText}
+            </div>
+          ) : null
+        ) : null}
+        <h1 className="text-xl  mt-4 font-semibold text-salesforce-950">
           {props.title}
         </h1>
         <p className="text-md font-light mb-10 ">{props.description}</p>

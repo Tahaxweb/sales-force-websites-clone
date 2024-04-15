@@ -61,6 +61,8 @@ function GrowthHub() {
               link={data.href}
               variant="primary"
               image=""
+              badgeText={data.badge}
+              badge={true}
             />
           ))}
         </div>

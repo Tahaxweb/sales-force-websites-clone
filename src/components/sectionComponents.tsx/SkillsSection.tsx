@@ -40,6 +40,8 @@ function SkillsSection() {
           description={data.description}
           link="/"
           variant="primary"
+          badge={true}
+          badgeText=""
         />
       ))}
     </Features>
